@@ -1,79 +1,74 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-	<strong>Python: print("Hello, World!")</strong><br>
-	<strong>JavaScript: console.log("Hello, World!");</strong><br>
-
-
-
-
-
-
-	<strong>C: #include <stdio.h>int main() {
-    printf("Hello, World!\n");
-    return 0;
-}
-</strong><br>
-
-
-
-	<strong>Java: public class HelloWorld {
-public static void main(String[] args) {
-System.out.println("Hello, World!");
-}
-}</strong><br>
-
-
-
-
-
-
-	<strong>LOLCODE: HAI 1.2
-	VISIBLE "HELLO WORLD!"
-	KTHXBYE</strong><br>
-
-
-
-
-
-
-
-
-<strong>HTML: &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;body&gt; Hello, World! &lt;/body&gt; &lt;/html&gt;</strong>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<br>
-
-
-
-
-<strong>Rust: fn main() {
-	println!("Hello, World!");
-	}</strong><br>
-
-
-
-
-
-<strong>Go:package main
-import "fmt"
-func main() {
-fmt.Println("Hello, World!")
-}
-</strong><br>
+Python: print("Hello, World!")
+JavaScript: console.log("Hello, World!");
+C: #include <stdio.h> int main() { printf("Hello, World!\n"); return 0; }
+Java: public class HelloWorld { public static void main(String[] args) { System.out.println("Hello, World!"); } }
+HTML: <!DOCTYPE html> <html> <body> Hello, World! </body> </html>
+LOLCODE: HAI 1.2 VISIBLE "HELLO WORLD!" KTHXBYE
+Rust: fn main() { println!("Hello, World!"); }
+Go: package main import "fmt" func main() { fmt.Println("Hello, World!") }
+Ruby: puts "Hello, World!"
+Swift: print("Hello, World!")
+Kotlin: fun main() { println("Hello, World!") }
+Perl: print "Hello, World!\n";
+R: cat("Hello, World!\n")
+Haskell: main = putStrLn "Hello, World!"
+TypeScript: console.log("Hello, World!");
+PHP: <?php echo "Hello, World!"; ?>
+Scala: object HelloWorld { def main(args: Array[String]): Unit = { println("Hello, World!") } }
+Lua: print("Hello, World!")
+Elixir: IO.puts "Hello, World!"
+Clojure: (println "Hello, World!")
+Dart: void main() { print('Hello, World!'); }
+Assembly (NASM): section .data msg db "Hello, World!", 0Ah section .text global _start _start: mov edx, 13 mov ecx, msg mov ebx, 1 mov eax, 4 int 0x80 mov eax, 1 int 0x80
+Fortran: program hello print *, "Hello, World!" end program hello
+COBOL: IDENTIFICATION DIVISION. PROGRAM-ID. HELLO-WORLD. PROCEDURE DIVISION. DISPLAY "Hello, World!". STOP RUN.
+Pascal: program HelloWorld; begin writeln('Hello, World!'); end.
+F#: printfn "Hello, World!"
+VB.NET: Module Hello Sub Main() Console.WriteLine("Hello, World!") End Sub End Module
+Groovy: println 'Hello, World!'
+Smalltalk: Transcript show: 'Hello, World!'.
+Scheme: (display "Hello, World!")
+Prolog: :- write('Hello, World!').
+Erlang: -module(hello). -export([start/0]). start() -> io:format("Hello, World!~n").
+Julia: println("Hello, World!")
+V: println('Hello, World!')
+Nim: echo "Hello, World!"
+Crystal: puts "Hello, World!"
+Hack: <?hh echo "Hello, World!"; ?>
+REXX: say "Hello, World!"
+PowerShell: Write-Output "Hello, World!"
+Bash: echo "Hello, World!"
+Zsh: echo "Hello, World!"
+Fish: echo "Hello, World!"
+Makefile: all: echo "Hello, World!"
+Batch: @echo Hello, World!
+Windows CMD: echo Hello, World!
+Brainf*ck: +[----->+++<]>+.---.+++++++..+++.------------.>++++++.<++++++++.--------.+++.------.--------.
+Whitespace: [invisible code]
+Assembly (MASM): .data msg db "Hello, World!", 0Ah, 0 .code main: mov edx, offset msg call WriteString exit
+VHDL: architecture behavior of hello is begin process begin report "Hello, World!"; wait; end process; end behavior;
+Verilog: initial begin $display("Hello, World!"); end
+OCaml: print_endline "Hello, World!"
+ML: print "Hello, World!\n";
+Assembly (ARM): .data msg: .asciz "Hello, World!" .text .global _start _start: ldr r0, =msg bl printf
+Assembly (x86_64 Linux): section .data msg db "Hello, World!", 0Ah section .text global _start _start: mov rax, 1 mov rdi, 1 mov rsi, msg mov rdx, 13 syscall
+Assembly (x86 Windows): .data msg db "Hello, World!", 0Ah, 0 .code main: mov edx, offset msg call WriteConsole
+Assembly (MIPS): .data msg: .asciiz "Hello, World!" .text main: li $v0, 4 la $a0, msg syscall
+Assembly (RISC-V): .data msg: .asciz "Hello, World!" .text main: li a7, 4 la a0, msg ecall
+Assembly (SPARC): .section ".data" msg: .asciz "Hello, World!" .section ".text" .global main main: set msg, %o0 call printf
+Assembly (6502): LDX #0 LDY #0 LDA #"H" JSR $FFD2
+Assembly (Z80): LD A,"H" CALL $0010
+Assembly (PDP-11): MOV #msg, R1 CALL #PUTS
+Assembly (Motorola 68000): MOVE.L #msg,D1 BSR PRINT
+Assembly (TMS9900): LI R1,msg BLWP @PUTS
+Assembly (PIC): MOVLW "H" CALL PrintChar
+Assembly (AVR): LDI R16, 'H' RCALL PrintChar
+Assembly (8051): MOV A,#'H' LCALL PRINT
+Assembly (VAX): MOVL #msg, R1 CALLS #1, PUTS
+Assembly (Itanium): MOV r32 = @msg BR.CALL.SPTK b0 = puts
+Assembly (PowerPC): li r3, msg bl printf
+Assembly (Alpha): lda $16, msg jsr puts
+Assembly (x86 DOS): mov ah, 09h mov dx, offset msg int 21h
+Assembly (x86 BIOS): mov ah, 0Eh mov al, 'H' int 10h
+Assembly (x86 UEFI): mov rdi, msg call Print
+Assembly (x86 EFI): mov rdi, msg call EfiPrint <
